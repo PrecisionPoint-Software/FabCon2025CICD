@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/variables/1.0.0/schema.json",
+  "variables": [
+    {
+      "name": "workspace_id",
+      "note": "",
+      "type": "String",
+      "value": "57c12938-8844-4995-b3aa-d27748d9495b"
+    },
+    {
+      "name": "lakehouse_bronze_id",
+      "note": "",
+      "type": "String",
+      "value": "83758c1a-e431-41c8-af0c-ec4b583fae74"
+    },
+    {
+      "name": "lakehouse_bronze_table",
+      "note": "",
+      "type": "String",
+      "value": "Tables/dbo/t3_dev"
+    }
+  ]
+}

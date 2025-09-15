@@ -1,6 +1,6 @@
 expression DatabaseQuery =
 		let
-		    database = Sql.Database("eolntyepxtmuxdufedar7dshvq-hau4cv2erckutm5k2j3urwkjlm.datawarehouse.fabric.microsoft.com", "66288e37-0d93-4185-8f49-040a8a1ea4a3")
+		    database = Sql.Database("eolntyepxtmuxdufedar7dshvq-e6grcb53ow5elkg7rx2pjgoxhu.datawarehouse.fabric.microsoft.com", "ab527e99-b1c1-469d-ad7c-438439dbd4ac?")
 		in
 		    database
 	lineageTag: 6ee5e902-2d4f-4de8-b25b-f716d19f0fa1
