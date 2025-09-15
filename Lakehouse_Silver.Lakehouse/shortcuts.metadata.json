@@ -5,7 +5,7 @@
     "target": {
       "type": "OneLake",
       "oneLake": {
-        "path": "Tables/dbo/t3_dev",
+        "path": "Tables/dbo/t3_prod",
         "itemId": "583fae74-ec4b-af0c-41c8-e43183758c1a",
         "workspaceId": "00000000-0000-0000-0000-000000000000",
         "artifactType": "Lakehouse"
@@ -19,9 +19,8 @@
       "type": "OneLake",
       "oneLake": {
         "path": "Tables/dbo/t2",
-        "itemId": "583fae74-ec4b-af0c-41c8-e43183758c1a",
-        "workspaceId": "00000000-0000-0000-0000-000000000000",
-        "artifactType": "Lakehouse"
+        "itemId": "$(/**/MyVariableLibrary/lakehouse_bronze_id)",
+        "workspaceId": "$(/**/MyVariableLibrary/workspace_id)"
       }
     }
   }
