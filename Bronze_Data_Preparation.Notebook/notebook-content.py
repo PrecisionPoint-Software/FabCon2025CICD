@@ -33,7 +33,7 @@ t3_prod_df = spark.table("t3_prod")
 
 t3_dev_df = t3_prod_df.sample(fraction=0.01, seed=42).write.format("delta").mode("overwrite").saveAsTable("dbo.t3_dev")
 
-t3_test_df = t3_prod_df.sample(fraction=0.10, seed=123).write.format("delta").mode("overwrite").saveAsTable("dbo.t3_test")
+t3_df = t3_prod_df.sample(fraction=0.10, seed=123).write.format("delta").mode("overwrite").saveAsTable("dbo.t3_test")
 
 # METADATA ********************
 
@@ -44,7 +44,7 @@ t3_test_df = t3_prod_df.sample(fraction=0.10, seed=123).write.format("delta").mo
 
 # CELL ********************
 
-print(spark.table("t3_prod").count(), spark.table("t3_test").count(), spark.table("t3_dev").count())
+print(spark.table("t3_prod").count(), spark.table("t3").count(), spark.table("t3_dev").count())
 
 # METADATA ********************
 
